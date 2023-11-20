@@ -254,3 +254,164 @@
 // console.log(laptop2 instanceof SmartPhone);
 
 
+// CONSTRUCTOR PROPERTY
+// function NewRecord(name) {
+//     this.name = name 
+// }
+// let person1 = new NewRecord('John');
+// let person2 = {name : 'Henk'};
+// console.log(person2);
+
+// CONSTRUCTOR PROPERTY 
+// console.log(person1.constructor === NewRecord);
+// It is the same as using instanceof
+// console.log(person1 instanceof NewRecord);
+// console.log(person2 instanceof NewRecord);
+
+
+
+
+// FUNCTIONS INSIDE OF AN OBJECT 
+
+
+// let person = {
+//     firstName: 'Sipho',
+//     lastName: 'Gcusa',
+//     fullName: function() {
+//         return  '${this.firstName} ${this.lastname}'
+//     }
+// }
+// console.log(person);
+// console.log(person.fullName())
+
+
+// let person = {
+//     firstName: 'John',
+//     lastName: 'Bruce',
+//     hrs: 120,
+//     rate: 500,
+//     salary: function() {
+//         return this.hrs * this.rate
+//     }
+// }
+// console.log(person);
+// console.log(person.salary())
+
+
+
+
+
+// let laptop = {
+//     make: 'Dell',
+//     cpu: '3Ghz',
+//     ram: '16GB'
+// }
+// for (let key in laptop) {
+//     console.log(key, '', laptop[key]);
+// }
+
+// console.log(laptop);
+// for(const keyName in laptop) {
+//     console.log(laptop[keyName])
+// }
+// OR 
+// console.log(Object.keys(laptop))
+// console.log(Object.values(laptop))
+// Object.keys(laptop).forEach((key)=>{
+//     console.log(`${key} -> ${laptop[key]}`);
+// })
+// Object.keys(laptop).forEach((value)=>{
+//     console.log(`${value}`);
+// })
+
+
+
+
+// let car1 = {
+//     make: 'Toyota',
+//     year: 2023
+// }
+// let car2 = car1
+// console.log("==car1==");
+// console.log(car1);
+// console.log("==car2==");
+// console.log(car2);
+// console.log("change the value of car2");
+// car2.year = 2024;
+// console.log(car1, car2);
+
+// let car2 = {...car1}
+// console.log(car1, car2);
+// console.log("change the value of car2");
+// car2.year = 2024
+// console.log(car1, car2);
+// OBJECT.ASSIGN 
+// let car3 = Object.assign({}, car1)
+// console.log("===car3===");
+// console.log(car3);
+// JASON.PARSE 
+// console.log("JSON.parse()");
+// let car4 = JSON.parse(JSON.stringify(car1))
+// console.log(car4);
+
+
+
+
+
+// INTERVIEW QUESTION 
+// STRING METHOD 
+
+// let numbers = [2, 4, 11, 1]
+// let a = 3
+// let b = 2
+// console.log(`Highest number: ${Math.max(...numbers)}`);
+// console.log(`Lowest number: ${Math.min(...numbers)}`);
+// // 3^2 = 3 * 3
+// console.log(`pow(x,y): ${Math.pow(a, b)}`);
+// console.dir(Math);
+
+
+
+
+// String method
+// let firstName = 'Joel'
+// console.log(firstName.split("").reverse().join(""));
+// console.log(firstName.split("").reverse().join(""));
+/*
+Exercises on the below methods
+=returns each letter=
+- charAt() 
+=returns a boolean, after you specified the last word and number of characters in an array=
+- endsWith()  
+=returns a boolean, you specify a word that is in the array=
+- includes()
+=
+- lastIndexOf()
+- indexOf()
+- replace()
+- repeat()
+- startWith()
+- subString()
+- trim()
+- trimEnd()
+- trimStart()
+- slice()
+- split()
+*/
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+
+// let rIdx = Math.floor(Math.random() * (numbers.length - 1))
+// console.log(numbers);
+// console.log(rIdx);
+// console.log(numbers[rIdx]);
+
+
+// let modify = numbers.map( (x)=> {
+//     return x/2
+// })
+// console.log(modify);
+// let sum = numbers.reduce((a, b)=> a * b)
+// console.log(sum);
+
